@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    {% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>About us</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="{% url 'home' %}">LP Roofing and Concrete</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link" href=" {% url 'about' %} ">About Us</a>
+                  <a class="nav-item nav-link" href="{% url 'services' %}">Our Services</a>
+                  <a class="nav-item nav-link" href="{% url 'gallery' %}">Gallery</a>
+                  <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+<main role="main">
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-15">
+          <h4>About us</h4>
+          <img class=" center img-fluid" src="{% static 'aboutus.jpg' %}"/>
+          <p class="pt-2">
+                LP Roofing and Concrete is an experienced, trusted, fully licensed and insured roofing and concrete provider since 2001
+            and has built an excellent reputation in Greater Toronto Area. We are a dedicated team of
+            workers ready to fulfil your expectations and go even beyond of them. Unlike most of the roofing and concrete
+            companies in GTA, LP Roofing and Concrete place their customers before anything and work hard to win their trust
+            by providing only top quality roofing and concrete services at reasonable prices and best customer services.
+          </p>
+          <p>
+                Our success came along with our constant work of improving the quality of services, placing us on the
+            other place – as clients. Everyone knows the differences between the bad, good an excellent roofing and concrete
+            services. We believe you are one of those people, who want to get what they need at a reasonable price
+            and receive a fair evaluate of every service that you get. Don’t make a compromise with the quality
+            and you are exacting about everything that you get, LP Roofing and Concrete may be the best choice for your roofing and concrete needs.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</main>
+
+
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <p>Copyright © LP Roofing {% now "Y" %}</p>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+</html>
+

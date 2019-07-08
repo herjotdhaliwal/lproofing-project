@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    {% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Gallery</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"><link/>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .rotateimg-270 {
+        -webkit-transform:rotate(-270deg);
+        -moz-transform: rotate(-270deg);
+        -ms-transform: rotate(-270deg);
+        -o-transform: rotate(-270deg);
+        transform: rotate(-270deg);
+}
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="{% url 'home' %}">LP Roofing and Concrete</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link" href=" {% url 'about' %} ">About Us</a>
+                  <a class="nav-item nav-link" href="{% url 'services' %}">Our Services</a>
+                  <a class="nav-item nav-link" href="{% url 'gallery' %}">Gallery</a>
+                  <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+<main role="main">
+    <div class="container">
+
+        <div class="container gallery-container">
+
+            <h1 class="text-center">Gallery</h1>
+
+            <div class="tz-gallery">
+
+                <div class="row mb-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(1).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(1).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(2).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(2).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(3).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(3).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(14).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(14).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(4).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(4).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(5).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(5).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(6).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(6).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(7).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(7).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(8).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(8).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(9).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(9).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(10).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(10).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(11).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(11).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a class="lightbox" href="{% static 'Photo from Herjot(12).jpg' %}">
+                                <img src="{% static 'Photo from Herjot(12).jpg' %}" alt="Park" class="card-img-top">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <p>Copyright © LP Roofing {% now "Y" %}</p>
+  </div>
+
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+  </body>
+</html>
+

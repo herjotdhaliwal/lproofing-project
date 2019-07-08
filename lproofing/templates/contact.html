@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    {% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Contact Us</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .align-center {
+    text-align: center;
+    }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="{% url 'home' %}">LP Roofing and Concrete</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link" href=" {% url 'about' %} ">About Us</a>
+                  <a class="nav-item nav-link" href="{% url 'services' %}">Our Services</a>
+                  <a class="nav-item nav-link" href="{% url 'gallery' %}">Gallery</a>
+                  <a class="nav-item nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </div>
+          </div>
+      </nav>
+    </header>
+
+<main role="main">
+<div class="album py-5 bg-light">
+    <div class="container">
+        <h4>Contact us</h4>
+        <p class="align-center">
+                <img class='img-fluid center' src="{% static '1888948-contact-banner.jpg' %}"/>
+            </p>
+        <p>Get in touch and we'll get back to you as soon as we can.  We look forward to hearing from you!</p>
+
+      <div class="row">
+        <div class="col-md-4">
+
+          <h5>Email</h5>
+          <a href="mailto:info@lproofing.ca">info@lproofing.ca</a>
+          </div>
+
+          <div class="col-md-4">
+              <h5>Phone</h5>
+          <p>(416) 602 - 7216 OR (416) 662-1490</p>
+          </div>
+
+          <div class="col-md-4">
+              <h5 class="pt-3">In Person!</h5>
+
+            <a href="https://www.google.com/maps/place/Lp+Roofing+Supplies+Inc./@43.6857032,-79.7246397,17z/data=!3m1!4b1!4m5!3m4!1s0x882b3f68ec97ad93:0xb2e25d65f5b786a6!8m2!3d43.6856993!4d-79.722451" >
+                <p>286 Rutherford Road South, Brampton, Ontario L6W 3J9</p>
+            </a>
+
+          </div>
+
+
+
+          <div class="col-md-4">
+              <a href="https://www.facebook.com/lproofingsupplies/">
+                  <img src="{% static 'Facebook logo.png' %}"/>
+              </a>
+          </div>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<footer class="text-muted">
+  <div class="container text-center">
+    <p>Copyright © LP Roofing {% now "Y" %}</p>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script></body>
+</html>
+
